@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 
 class GiteaAuth(OAuth2Auth):
     name = 'Gitea'
-    faIcon = 'fa-coffee'
+    faIcon = 'si-gitea'
 
     AUTH_URL = 'login/oauth/authorize'
     TOKEN_URL = 'login/oauth/access_token'
