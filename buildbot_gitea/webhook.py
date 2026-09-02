@@ -91,7 +91,7 @@ class GiteaHandler(BaseHookHandler):
         head = pull_request['head']
         repository = payload['repository']
         change = {
-            'author': '{} <{}>'.format(pull_request['user']['full_name'],
+            'author': '{} <{}>'.format(pull_request['user']['full_name'] or pull_request['user']['username'],
                                        pull_request['user']['email']),
             'comments': 'PR#{}: {}\n\n{}'.format(
                 pull_request['number'],
